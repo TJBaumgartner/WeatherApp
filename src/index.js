@@ -1,6 +1,8 @@
 const search = document.getElementById('searchBar');
 const submitSearch = document.getElementById('searchSubmit');
-import {createForecast} from "../forecastUI";
+import {createForecast} from "./forecastUI";
+import './style.css';
+
 
 submitSearch.addEventListener('click', searchWeather);
 
