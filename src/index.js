@@ -1,10 +1,16 @@
-const search = document.getElementById('searchBar');
-const submitSearch = document.getElementById('searchSubmit');
 import {createForecast} from "./forecastUI";
 import './style.css';
+import { switchDegree } from "./forecastUI";
 
+const search = document.getElementById('searchBar');
+const submitSearch = document.getElementById('searchSubmit');
+const celButton = document.getElementById('cel');
+const farButton = document.getElementById('far');
 
+searchWeather('Germany');
 submitSearch.addEventListener('click', searchWeather);
+celButton.addEventListener('click', switchDegree);
+farButton.addEventListener('click', switchDegree);
 
 function searchWeather() {
     let userInput = search.value;
