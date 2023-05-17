@@ -2,15 +2,18 @@
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
-
     <title>Weather App</title>
   </head>
 
   <body>
-    
+    <div id="banner">
+      <h1>Weather App</h1>
+    </div>
     <div id="searchContainer">
-      <input type="text" id="searchBar">
-      <button id="searchSubmit">Submit Search</button>
+      <input type="text" id="searchBar" placeholder="City...">
+      <button id="searchSubmit">
+        <img src="https://www.iconsdb.com/icons/preview/white/search-13-xxl.png">
+      </button>
     </div>
     <div id="forecastContent">
       <h1 id="country"></h1>
@@ -18,8 +21,8 @@
         <img src="#" id="icon"></img>
         <h1 id="temp"></h1>
         <div id="tempController">
-          <p id="cel">°C |</p>
-          <p id="far" class="active">°F</p>
+          <p class=" "id="cel">°C |</p>
+          <p class="active" id="far" >°F</p>
         </div>
         <div id="dataSpecifics">
           <p id="humidity">Humidity: </p>
