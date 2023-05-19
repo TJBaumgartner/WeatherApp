@@ -24,7 +24,8 @@ async function fetchData(input) {
         const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=8c5a10dd57674d3aac1211332231305&q=${input}&days=7&aqi=no&alerts=no
         `, {mode: 'cors'})
         const responseData = await response.json();
-        console.log(createForecast(responseData));
+        createForecast(responseData);
+        search.value = '';
     } catch(err){
         alert(`You got an error: Location ${input} could not be found.`);
     }

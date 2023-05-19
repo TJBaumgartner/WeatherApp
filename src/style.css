@@ -24,7 +24,7 @@ body{
     margin-top: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     gap: 10px;
 }
 #searchContainer input{
@@ -42,8 +42,9 @@ body{
     color: rgb(173, 173, 173);
 }
 #searchBar{
-    width: 50%;
+    width: 85%;
     background-color: rgb(31, 31, 31);
+    color: white;
 }
 #searchSubmit{
     padding: 10px 20px 10px 20px;
